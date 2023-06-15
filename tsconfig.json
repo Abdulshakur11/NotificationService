@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": true,
+    "inlineSourceMap": false,
+    "target": "es2015",
+    "outDir": "./dist",
+    "lib": ["es6"],
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "typeRoots" : ["./node_modules/@types", "./src/@types"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "noImplicitUseStrict": true,
+    "strict": false
+  },
+  "include": [
+    "src/infra/sequelize/**/*.js",
+    "src/infra/sequelize/**/*.ts",
+    "./src/**/*.js",
+    "./src/**/*.ts",
+    "./src/**/*.js", "knexfile.ts", "constants/taxonomy/taxonomy.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "!node_modules/@types",
+    "./dist"
+  ],
+  "experimentalDecorators": true,
+  "emitDecoratorMetadata": true,
+  "strictPropertyInitialization": false
+}
